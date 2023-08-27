@@ -13,21 +13,21 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(43, 86%, 17%);
-  --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
-  --clr-primary-4: hsl(42, 63%, 48%);
+  --clr-primary-1: hsl(97, 77%, 14%);
+  --clr-primary-2: hsl(97, 77%, 27%);
+  --clr-primary-3: hsl(97, 72%, 37%);
+  --clr-primary-4: hsl(96, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-5: hsl(95, 78%, 60%);
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(43, 89%, 70%);
-  --clr-primary-7: hsl(43, 90%, 76%);
-  --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-6: hsl(95, 89%, 70%);
+  --clr-primary-7: hsl(95, 90%, 76%);
+  --clr-primary-8: hsl(96, 86%, 81%);
+  --clr-primary-9: hsl(97, 90%, 88%);
+  --clr-primary-10: hsl(97, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-1: hsl(7, 53%, 19%);
+  --clr-grey-2: hsl(, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
@@ -73,7 +73,8 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
+
+img:not(nav-logo) {
   width: 100%;
   display: block;
 }
@@ -366,13 +367,13 @@ Hero
   margin-top: 1.25rem;
 }
 @media screen and (min-width: 992px) {
-  .hero-img {
-    display: block;
-    position: relative;
+  .hero{
+    background-image: url(../images/e2229f6a30\ \(1\)\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
-  .hero-center {
-    grid-template-columns: 1fr 1fr;
-  }
+ 
 
   .hero-img::before,
   .about-img::before {
@@ -442,6 +443,7 @@ Services
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  cursor: pointer;
 }
 .service-icon {
   font-size: 2rem;
@@ -809,8 +811,8 @@ Blog
   perspective: 1500px;
 }
 .card-side {
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
