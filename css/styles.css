@@ -78,7 +78,9 @@ img:not(nav-logo) {
   width: 100%;
   display: block;
 }
-
+.nav-logo{
+  width: 170px;
+}
 h1,
 h2,
 h3,
